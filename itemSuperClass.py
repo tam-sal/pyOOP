@@ -91,9 +91,7 @@ class Item:
     ### repr to print our instances as str, in the class name, we use the dunder to call the calss name genericly, just in case we created a child class, so this will inspect what class name the object is generated from and return the correct class name
     def __repr__(self):
         return f"{self.__class__.__name__}('{self.name}', {self.price}, {self.quantity})"
-    
-new_item = Item('Phone', 200,3)
-new_item.name = 'mouse'
+
 
 
 
